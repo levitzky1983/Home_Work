@@ -139,8 +139,8 @@ main {
 .dignity summary::-webkit-details-marker {
   display: none;
 }
-.dignity summary::-moz-details-marker {
-  display: none;
+.dignity summary{
+  display: block;
 }
 .dignity summary:before {
   display: block;
