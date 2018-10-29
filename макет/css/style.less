@@ -159,6 +159,7 @@ main {
 
 .dignity details summary {
     outline: none;
+    position: relative;
 }
 
 .first-details {
@@ -175,24 +176,31 @@ main {
     display: none;
 }
 
+.dignity summary::-moz-details-marker {
+    display: block;
+}
+
 .dignity summary:before {
-    display: inline-block;
+    display: block;
     width: 32px;
     height: 32px;
     background-color: #445161;
-    content: url(../img/plus.png);
-    line-height: 42px;
-    float: left;
+    content: '+';
     text-align: center;
     cursor: pointer;
-    position: relative;
-    margin-left: -45px;
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 32px;
+    position: absolute;
+    left: -40px;
+
+
 
 }
 
-.dignity summary:hover:before {
+.dignity details[open] summary:before {
 
-    content: url(../img/plus-black.png);
+    content: '-';
 
 }
 
@@ -309,21 +317,22 @@ main {
     text-align: left;
 }
 
-.reviews .back {
+.review-content {
     padding: 10px;
     background-color: #ebebeb;
     border-radius: 5px;
     margin-left: 95px;
+    position: relative;
 
 }
 
-.reviews .back:before {
-    position: relative;
-    left: -20px;
+.review-content:before {
     display: block;
-    width: 20px;
-    height: 20px;
-    background-color: #ebebeb;
+    position: absolute;
+    border: 15px solid transparent;
+    border-right: 15px solid #ebebeb;;
+    left: -30px;
+    top: 25px;
     content: "";
 
 }
