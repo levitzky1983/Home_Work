@@ -505,7 +505,7 @@ main {
     color: #ffffff;
 }
 
-#send {
+.contacts input[type="submit"] {
     display: block;
     width: 140px;
     background-color: #ffffff;
@@ -521,12 +521,12 @@ main {
     outline: none;
 }
 
-#send:hover {
+.contacts input[type="submit"]:hover {
     background-color: gray;
     color: #ffffff;
 }
 
-#send:active {
+.contacts input[type="submit"]:active {
     background-color: gray;
     color: red;
 }
