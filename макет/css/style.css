@@ -477,6 +477,8 @@ main {
     padding: 1rem;
     text-transform: capitalize;
     outline: none;
+    resize: none;
+    
 }
 
 .contacts textarea:focus {
