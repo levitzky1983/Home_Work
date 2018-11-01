@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JS Bin</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="output">
+            <h1>Заказ билетов в кино</h1>
+            <form action="#" class="registration">
+                <fieldset>
+                    <legend>Введите данные</legend>
+                    <div class="flex">
+                        <label for="txt">ФИО</label>
+                        <input id="txt" type="text" placeholder="Введите ФИО">
+                    </div>
+                    <div class="flex">
+                        <label for="age">Возраст</label>
+                        <input id="age" type="number" placeholder="Введите возраст" min="8">
+                    </div>
+                    <div class="flex">
+                        <label for="tel">Телефон</label>
+                        <input id="tel" type="text" placeholder="Введите телефон">
+                    </div>
+                    <div class="flex">
+                        <label for="data">Желаемая дата</label>
+                        <input id="data" type="date" min="2018-10-01" max="2018-11-01">
+                        <!-- была ошибка в указании for="data"  -->
+                    </div>
+                    <div class="flex">
+                        <label for="time">Время сеанса</label>
+                        <select name="list" id="time">
+                            <option value="time">10.00</option>
+                            <option value="time">13.50</option>
+                            <option value="time">19.30</option>
+                        </select>
+                    </div>
+                    <input class="flex" type="submit" value="Купить">
+
+                </fieldset>
+
+            </form>
+        </div>
+        <video class="video-bg" src="http://fs.kinomania.ru/media/video/e/bd/ebd8603b22a575e8ea2637428fa8fe6a.1080.mp4" autoplay muted loop>
+        </video>
+
+    </div>
+
+</body>
+
+</html>
