@@ -1,0 +1,63 @@
+/*
+Error: Invalid CSS after "...bgcolor urlurl(": expected ")", was "../image/"
+        on line 7 of E:\GitHub\html5_css3\home_work\final_layout\sass\style.scss
+
+2: @import '_reset.scss';
+3: 
+4: header{
+5:     width: 100%;
+6:     min-height: 1024px;
+7:     background-image:$bgcolor urlurl(../image/
+8: }
+
+Backtrace:
+E:\GitHub\html5_css3\home_work\final_layout\sass\style.scss:7
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:730:in `assert_tok'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:520:in `funcall'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:499:in `ident'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:291:in `unary_not'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:291:in `unary_div'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:291:in `unary_minus'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:291:in `unary_plus'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `times_div_or_mod'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `plus_or_minus'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `relational'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `eq_or_neq'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `and_expr'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `or_expr'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:476:in `space'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:414:in `interpolation'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:338:in `expr'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:721:in `assert_expr'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1134:in `sass_script'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:988:in `value!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:796:in `block in try_declaration'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `call'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...bgcolor urlurl(\": expected \")\", was \"../image/\"\A         on line 7 of E:\GitHub\html5_css3\home_work\final_layout\sass\style.scss\A \A 2: @import '_reset.scss';\A 3: \A 4: header{\A 5:     width: 100%;\A 6:     min-height: 1024px;\A 7:     background-image:$bgcolor urlurl(../image/\A 8: }"; }
