@@ -1,63 +1,309 @@
-/*
-Error: Invalid CSS after "...bgcolor urlurl(": expected ")", was "../image/"
-        on line 7 of E:\GitHub\html5_css3\home_work\final_layout\sass\style.scss
+@charset "UTF-8";
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_reset\.scss}line{font-family:\000031}}
+html,
+body {
+  font-size: 10px;
+  font-family: Helvetica, sans-serif;
+}
 
-2: @import '_reset.scss';
-3: 
-4: header{
-5:     width: 100%;
-6:     min-height: 1024px;
-7:     background-image:$bgcolor urlurl(../image/
-8: }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_reset\.scss}line{font-family:\000037}}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
-Backtrace:
-E:\GitHub\html5_css3\home_work\final_layout\sass\style.scss:7
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:730:in `assert_tok'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:520:in `funcall'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:499:in `ident'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:291:in `unary_not'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:291:in `unary_div'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:291:in `unary_minus'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:291:in `unary_plus'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `times_div_or_mod'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `plus_or_minus'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `relational'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `eq_or_neq'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `and_expr'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:272:in `or_expr'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:476:in `space'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:414:in `interpolation'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:338:in `expr'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:721:in `assert_expr'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1134:in `sass_script'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:988:in `value!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:796:in `block in try_declaration'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `call'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...bgcolor urlurl(\": expected \")\", was \"../image/\"\A         on line 7 of E:\GitHub\html5_css3\home_work\final_layout\sass\style.scss\A \A 2: @import '_reset.scss';\A 3: \A 4: header{\A 5:     width: 100%;\A 6:     min-height: 1024px;\A 7:     background-image:$bgcolor urlurl(../image/\A 8: }"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_reset\.scss}line{font-family:\0000312}}
+.container {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\000031}}
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 3% 7.8%;
+  min-height: 1024px;
+  background: #f4f5f8 url(../img/photo.jpg) no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\0000310}}
+header a.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 56px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\0000317}}
+header a.header-logo svg {
+  fill: #ffffff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\0000321}}
+header a.header-logo span {
+  font-family: Raleway;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 400;
+  text-align: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\0000331}}
+header nav {
+  width: 33.1%;
+  height: 56px;
+  margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\0000339}}
+header nav a {
+  text-decoration: none;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\0000348}}
+header nav a:hover {
+  color: #c7b29a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\0000354}}
+header .header-icons-cart-search {
+  width: 4.5%;
+  height: 56px;
+  margin-left: -10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*убираю пока поиск*/
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\0000362}}
+header .header-icons-cart-search .fa-shopping-bag {
+  color: #ffffff;
+  width: 24px;
+  font-size: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\0000368}}
+header .header-icons-cart-search .fa-search {
+  color: #ffffff;
+  width: 24px;
+  font-size: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\0000375}}
+header .header-icons-cart-search .header-search {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\0000380}}
+header .sliders {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\0000386}}
+header .sliders a {
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\0000391}}
+header .sliders svg {
+  fill: #ffffff;
+  opacity: 0.5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\0000395}}
+header .sliders svg:hover {
+  opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\00003100}}
+header .sliders .header-slogan {
+  width: 36%;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\00003104}}
+header .sliders .header-slogan-txt1 {
+  font-family: Raleway;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 500;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\00003111}}
+header .sliders .header-slogan-txt2 {
+  font-family: Raleway;
+  color: #ffffff;
+  font-size: 52px;
+  font-weight: 700;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\00003118}}
+header .sliders .header-slogan-txt3 {
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\00003128}}
+header .sliders .header-btn {
+  width: 100%;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\00003133}}
+header .sliders .header-btn button {
+  border-radius: 3px;
+  background-color: #998675;
+  width: 170px;
+  height: 53px;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\00003147}}
+header .sliders .header-btn button:hover {
+  color: black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\00003151}}
+header .sliders .header-btn button:active {
+  color: red;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\00003158}}
+header .sliders .slides {
+  width: 100%;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\00003164}}
+header .sliders .slides li {
+  width: 20px;
+  line-height: 11px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\00003170}}
+header .sliders .slides a {
+  display: block;
+  width: 11px;
+  height: 11px;
+  border-radius: 5.5px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/_header\.scss}line{font-family:\00003179}}
+header .sliders .slides a:hover {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d3c1ad;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0);
+  width: 15px;
+  height: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/style\.scss}line{font-family:\000035}}
+.service {
+  width: 61%;
+  margin: 0 auto;
+  min-height: 380px;
+  background-color: #ffffff;
+  padding: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/style\.scss}line{font-family:\0000315}}
+.service a {
+  display: block;
+  width: 23%;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/style\.scss}line{font-family:\0000322}}
+.service a svg {
+  fill: #555555;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/style\.scss}line{font-family:\0000327}}
+.service a h3 {
+  font-family: Raleway;
+  color: #555555;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin: 3rem auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/style\.scss}line{font-family:\0000336}}
+.service a p {
+  font-family: Montserrat;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/style\.scss}line{font-family:\0000345}}
+.service a::after {
+  content: " ";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #f1eee9;
+  position: absolute;
+  bottom: -4rem;
+  left: 37%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/style\.scss}line{font-family:\0000357}}
+.service a:hover svg {
+  fill: #c7b299;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/style\.scss}line{font-family:\0000360}}
+.service a:hover h3 {
+  color: #c7b299;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/GitHub\/html5_css3\/home_work\/final_layout\/sass\/style\.scss}line{font-family:\0000363}}
+.service a:hover::after {
+  background-color: #c7b299;
+}
