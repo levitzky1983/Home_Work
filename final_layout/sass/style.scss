@@ -1,72 +1,84 @@
 @import '_variables.scss';
 @import '_reset.scss';
 @import '_header.scss';
+@import '_service.scss';
+@import '_waxom.scss';
+@import 'text-box.scss';
+@import '_latest-project.scss';
 
-.service {
-    width: 61%;
-    margin: 0 auto;
-    min-height: 380px;
-    background-color: #ffffff;
-    padding: 5% 0;
-    display: flex;
-    justify-content: space-between;
+.video-presentation {
+    width: 100%;
+    min-height: 705px;
+    position: relative;
+    background-color: $bgcolor;
 
+    .play-video {
+        position: absolute;
+        width: 100%;
+        height: 705px;
+        left: 0px;
+        top: 0px;
+           
+    }
 
-    a {
-        display: block;
-        width: 23%;
-        text-decoration: none;
-        text-align: center;
-        position: relative;
+    &-txt {
+        width: 100%;
+        min-height: 705px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+                
 
-        svg {
-            fill: #555555;
+        .video-play-btn {
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 100px;
+            height: 100px;
+            outline: none;
+            border: none;
 
+            svg {
+                fill: $colorTextWhite;
+            }
         }
+
+       
 
         h3 {
+            margin-top: 4rem;
             font-family: Raleway;
-            color: #555555;
-            font-size: 22px;
-            font-weight: 600;
+            color: $colorTextWhite;
+            font-size: 30px;
+            font-weight: 500;
             text-align: center;
-            margin: 3rem auto;
         }
 
-        p {
+        p.text {
+            width: 28.7%;
+            margin: 3rem auto;
             font-family: Montserrat;
-            color: #8c8c8c;
-            font-size: 14px;
+            color: #ffffff;
+            font-size: 16px;
             font-weight: 300;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        p.time {
+            font-family: Montserrat;
+            color: #c7b299;
+            font-size: 14px;
+            font-weight: 400;
             line-height: 24px;
             text-align: center;
         }
-
-        &::after {
-            content: " ";
-            display: block;
-            width: 70px;
-            height: 3px;
-            background-color: #f1eee9;
-            position: absolute;
-            bottom: -4rem;
-            left: 37%;
-
-        }
-        &:hover{
-            svg{
-                fill:$serviceHover;
-            }
-            h3{
-                color: $serviceHover;
-            }
-            &::after{
-                background-color: $serviceHover;
-            }
-        }
-
     }
-
-
-
+   
 }
+ .video-presentation-txt--hide{
+        display: none;
+    }
