@@ -1,8 +1,11 @@
+@import '_fonts.scss';
 @import '_variables.scss';
 @import '_reset.scss';
-
-header{
-    width: 100%;
-    min-height: 1024px;
-    background-image:$bgcolor urlurl(../image/
-}
+@import '_header.scss';
+@import '_service.scss';
+@import '_waxom.scss';
+@import 'text-box.scss';
+@import '_latest-project.scss';
+@import '_video-presentation.scss';
+@import '_mobile-devices.scss';
+@import '_counters.scss';
