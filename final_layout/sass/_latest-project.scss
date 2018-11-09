@@ -33,7 +33,7 @@
 
         li {
             list-style: none;
-            border-radius: 3px;
+            border-radius: 5px;
             border-style: solid;
             border-width: 1px;
             border-color: #ebebeb;
@@ -44,24 +44,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: Montserrat;
+            color: #8c8c8c;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 21px;
 
-            a {
-                width: 100%;
-                text-decoration: none;
-                font-family: Montserrat;
-                color: #8c8c8c;
-                font-size: 14px;
-                font-weight: 300;
-                line-height: 21px;
-                text-align: center;
-            }
+
 
             &:hover {
                 background-color: #998675;
-
-                a {
-                    color: $colorTextWhite;
-                }
+                color: $colorTextWhite;
             }
         }
     }
@@ -79,15 +72,23 @@
             justify-content: space-between;
         }
 
-        figcaption {
+        a {
+            display: block;
+            text-decoration: none;
+
+        }
+
+        .item-text {
             width: 370px;
             height: 100px;
             background-color: #fbfaf8;
+            outline: none;
             display: flex;
             flex-direction: column;
             justify-content: center;
             padding: 3rem;
             position: relative;
+            bottom: 3px;
 
             h3 {
                 font-family: Raleway;
@@ -105,14 +106,33 @@
                 line-height: 20px;
                 text-align: left;
             }
-            &::before{
+
+            &::before {
                 display: block;
-                content:"";
+                content: "";
                 position: absolute;
-                left:30px;
-                top:-36px;
-                border: 20px solid transparent;	
+                left: 30px;
+                top: -35px;
+                border: 20px solid transparent;
                 border-bottom: 15px solid #fbfaf8;
+            }
+        }
+
+        a:hover {
+
+            img {
+                filter: grayscale(64%) sepia(0.31) saturate(0.38) brightness(72%) contrast(100%);
+                -webkit-filter: grayscale(64%) sepia(0.31) saturate(0.38) brightness(72%) contrast(100%);
+            }
+
+            .item-text {
+                background-color: #362f2d;
+                color: $colorTextWhite;
+            }
+
+            .item-text::before {
+                border: 20px solid transparent;
+                border-bottom: 15px solid #362f2d;
             }
         }
 
