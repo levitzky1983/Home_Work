@@ -110,7 +110,7 @@ header a.header-logo:hover span {
   color: #c7b29a;
 }
 header nav {
-  width: 38%;
+  min-width: 38%;
   height: 56px;
   margin-left: 10%;
   display: -webkit-box;
@@ -369,6 +369,7 @@ header .slides a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 8rem;
+  overflow: hidden;
 }
 .waxom h2 {
   font-family: Raleway;
