@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Зачетный макет</title>
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/link-search.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
 </head>
 
 <body>
@@ -32,8 +35,9 @@
             <div class="header-icons-cart-search">
 
                 <button class="header-cart"></button>
-
-                <input id="search" class="header-search" type="search">
+                <form action="#">
+                    <input id="search" class="header-search" type="search">
+                </form>
             </div>
             <div class="sliders">
 
@@ -42,26 +46,40 @@
                         <path d="M 38.03 72.98C 38.03 72.98 0 36.5 0 36.5 0 36.5 38.03 0.02 38.03 0.02 38.03 0.02 40 2.02 40 2.02 40 2.02 4.07 36.5 4.07 36.5 4.07 36.5 40 70.98 40 70.98 40 70.98 38.03 72.98 38.03 72.98Z" />
                     </svg>
                 </a>
-                <div class="header-slogan">
+                <div id="first" class="header-slogan">
                     <p class="header-slogan-txt1">Unique and Modern Design</p>
                     <p class="header-slogan-txt2">Portfolio PSD Template</p>
                     <p class="header-slogan-txt3">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                    <button>get started</button>
+
+                </div>
+                <div id="second" class="header-slogan">
+                    <p class="header-slogan-txt1">2</p>
+                    <p class="header-slogan-txt2">2</p>
+                    <p class="header-slogan-txt3">2</p>
+
+                </div>
+                <div id="third" class="header-slogan">
+                    <p class="header-slogan-txt1">3</p>
+                    <p class="header-slogan-txt2">3</p>
+                    <p class="header-slogan-txt3">3</p>
+
                 </div>
                 <a href="#" class="right-arrow">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="73px" viewBox="0 0 40 73">
                         <path d="M 1.97 72.98C 1.97 72.98 40 36.5 40 36.5 40 36.5 1.97 0.02 1.97 0.02 1.97 0.02 0 2.02 0 2.02 0 2.02 35.93 36.5 35.93 36.5 35.93 36.5 0 70.98 0 70.98 0 70.98 1.97 72.98 1.97 72.98Z" />
                     </svg>
                 </a>
-
-                <ul class="slides">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
             </div>
+            <button class="main-btn">get started</button>
+
+            <ul class="slides">
+                <li><a href="#first"></a></li>
+                <li><a href="#second"></a></li>
+                <li><a href="#third"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+
         </header>
 
         <main>
@@ -73,7 +91,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49px" height="49px" viewBox="0 0 49 49">
                             <path d="M 47.67 19.72C 47.67 19.72 33.4 33.99 33.4 33.99 33.4 33.99 0.53 48.46 0.53 48.46 0.53 48.46 15.01 15.59 15.01 15.59 15.01 15.59 29.28 1.33 29.28 1.33 29.9 0.71 30.9 0.71 31.53 1.33 32.15 1.95 32.15 2.95 31.53 3.58 31.53 3.58 17.68 17.42 17.68 17.42 17.68 17.42 9.11 36.89 9.11 36.89 9.11 36.89 12.11 39.89 12.11 39.89 12.11 39.89 31.57 31.31 31.57 31.31 31.57 31.31 45.42 17.47 45.42 17.47 46.04 16.85 47.04 16.85 47.67 17.47 48.29 18.09 48.29 19.1 47.67 19.72ZM 29.75 28.47C 29.43 28.77 29.03 28.93 28.62 28.93 28.21 28.93 27.81 28.77 27.5 28.47 26.88 27.84 26.88 26.84 27.5 26.22 27.5 26.22 40.83 12.88 40.83 12.88 41.45 12.26 42.45 12.26 43.08 12.88 43.7 13.51 43.7 14.51 43.08 15.13 43.08 15.13 29.75 28.47 29.75 28.47ZM 26.26 24.99C 25.95 25.29 25.55 25.45 25.14 25.45 24.73 25.45 24.33 25.29 24.02 24.99 23.39 24.36 23.39 23.35 24.02 22.73 24.02 22.73 37.35 9.4 37.35 9.4 37.97 8.78 38.97 8.78 39.6 9.4 40.22 10.02 40.22 11.03 39.6 11.65 39.6 11.65 26.26 24.99 26.26 24.99ZM 22.78 21.5C 22.47 21.81 22.07 21.97 21.66 21.97 21.25 21.97 20.84 21.81 20.53 21.5 19.91 20.88 19.91 19.87 20.53 19.25 20.53 19.25 33.87 5.92 33.87 5.92 34.49 5.3 35.5 5.3 36.12 5.92 36.74 6.54 36.74 7.55 36.12 8.17 36.12 8.17 22.78 21.5 22.78 21.5Z" /></svg>
                         <figcaption>
-                            <h3>Web &amp App Design</h3>
+                            <h3>Web &amp; App Design</h3>
                             <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
                         </figcaption>
                     </figure>
@@ -144,74 +162,74 @@
                 <div class="latest-project-item">
                     <!--лишние обертки top и bottom для выравнивания по вертикали!-->
                     <div class="latest-project-item-top">
-                        <a href="#">
-                            <article>
-                                <img src="img/latest-item-1.jpg" alt="img" width="370" height="237">
-                                <div class="item-text">
-                                    <h3>Claritas Etiam Processus</h3>
-                                    <p>Photography, Nature</p>
-                                </div>
-                            </article>
-                            <button class="hover-1"><i></i></button>
-                            <button class="hover-2"><i></i></button>
-                        </a>
-                        <a href="#">
-                            <article>
-                                <img src="img/latest-item-2.jpg" alt="img" width="370" height="237">
-                                <div class="item-text">
-                                    <h3>Quam Nutamus Farum</h3>
-                                    <p>Graphic Design, Mock-Up</p>
-                                </div>
-                            </article>
-                            <button class="hover-1"><i></i></button>
-                            <button class="hover-2"><i></i></button>
-                        </a>
-                        <a href="#">
-                            <article>
-                                <img src="img/latest-item-3.jpg" alt="img" width="370" height="237">
-                                <div class="item-text">
-                                    <h3>Usus Legentis Videntur</h3>
-                                    <p>Photography, Holiday</p>
-                                </div>
-                            </article>
-                            <button class="hover-1"><i></i></button>
-                            <button class="hover-2"><i></i></button>
-                        </a>
+
+                        <article>
+                            <img src="img/latest-item-1.jpg" alt="img" width="370" height="237">
+                            <div class="item-text">
+                                <h3>Claritas Etiam Processus</h3>
+                                <p>Photography, Nature</p>
+                            </div>
+
+                            <button class="hover-1"><i class="icon-link"></i></button>
+                            <button class="hover-2"><i class="icon-search"></i></button>
+                        </article>
+
+                        <article>
+                            <img src="img/latest-item-2.jpg" alt="img" width="370" height="237">
+                            <div class="item-text">
+                                <h3>Quam Nutamus Farum</h3>
+                                <p>Graphic Design, Mock-Up</p>
+                            </div>
+
+                            <button class="hover-1"><i class="icon-link"></i></button>
+                            <button class="hover-2"><i class="icon-search"></i></button>
+                        </article>
+
+                        <article>
+                            <img src="img/latest-item-3.jpg" alt="img" width="370" height="237">
+                            <div class="item-text">
+                                <h3>Usus Legentis Videntur</h3>
+                                <p>Photography, Holiday</p>
+                            </div>
+
+                            <button class="hover-1"><i class="icon-link"></i></button>
+                            <button class="hover-2"><i class="icon-search"></i></button>
+                        </article>
                     </div>
                     <div class="latest-project-item-bottom">
-                        <a href="#">
-                            <article>
-                                <img src="img/latest-item-4.jpg" alt="img" width="370" height="237">
-                                <div class="item-text">
-                                    <h3>Claritas Etiam Processus</h3>
-                                    <p>Photography, Nature</p>
-                                </div>
-                            </article>
-                            <button class="hover-1"><i></i></button>
-                            <button class="hover-2"><i></i></button>
-                        </a>
-                        <a href="#">
-                            <article>
-                                <img src="img/latest-item-5.jpg" alt="img" width="370" height="237">
-                                <div class="item-text">
-                                    <h3>Quam Nutamus Farum</h3>
-                                    <p>Graphic Design, Mock-Up</p>
-                                </div>
-                            </article>
-                            <button class="hover-1"><i></i></button>
-                            <button class="hover-2"><i></i></button>
-                        </a>
-                        <a href="#">
-                            <article>
-                                <img src="img/latest-item-6.jpg" alt="img" width="370" height="237">
-                                <div class="item-text">
-                                    <h3>Usus Legentis Videntur</h3>
-                                    <p>Photography, Holiday</p>
-                                </div>
-                            </article>
-                            <button class="hover-1"><i></i></button>
-                            <button class="hover-2"><i></i></button>
-                        </a>
+
+                        <article>
+                            <img src="img/latest-item-4.jpg" alt="img" width="370" height="237">
+                            <div class="item-text">
+                                <h3>Claritas Etiam Processus</h3>
+                                <p>Photography, Nature</p>
+                            </div>
+
+                            <button class="hover-1"><i class="icon-link"></i></button>
+                            <button class="hover-2"><i class="icon-search"></i></button>
+                        </article>
+
+                        <article>
+                            <img src="img/latest-item-5.jpg" alt="img" width="370" height="237">
+                            <div class="item-text">
+                                <h3>Quam Nutamus Farum</h3>
+                                <p>Graphic Design, Mock-Up</p>
+                            </div>
+
+                            <button class="hover-1"><i class="icon-link"></i></button>
+                            <button class="hover-2"><i class="icon-search"></i></button>
+                        </article>
+
+                        <article>
+                            <img src="img/latest-item-6.jpg" alt="img" width="370" height="237">
+                            <div class="item-text">
+                                <h3>Usus Legentis Videntur</h3>
+                                <p>Photography, Holiday</p>
+                            </div>
+
+                            <button class="hover-1"><i class="icon-link"></i></button>
+                            <button class="hover-2"><i class="icon-search"></i></button>
+                        </article>
                     </div>
                 </div>
                 <a class="latest-project-btn" href="#"><span>Load More</span> </a>
@@ -237,7 +255,7 @@
 
                     <h3>Waxom Video Presentation</h3>
                     <p class="text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
-                    <p class="time">03:26</p>
+                    <time> 03:26</time>
                 </div>
 
 
@@ -277,120 +295,146 @@
             <section class="counters">
                 <!--не уверен, что это секция-->
                 <div class="counters-item client-icon">
-                    <p class="counters-item-count">3587</p>
-                    <p class="counters-item-text">Satisfied Clients</p>
+                    <span class="counters-item-count">3587</span>
+                    <span class="counters-item-text">Satisfied Clients</span>
                 </div>
                 <div class="counters-item coffee-icon">
-                    <p class="counters-item-count">207</p>
-                    <p class="counters-item-text">Cups of coffee</p>
+                    <span class="counters-item-count">207</span>
+                    <span class="counters-item-text">Cups of coffee</span>
                 </div>
                 <div class="counters-item blog-icon">
-                    <p class="counters-item-count">2500</p>
-                    <p class="counters-item-text">Blog posts</p>
+                    <span class="counters-item-count">2500</span>
+                        <span class="counters-item-text">Blog posts</span>
                 </div>
                 <div class="counters-item likes-icon">
-                    <p class="counters-item-count">873</p>
-                    <p class="counters-item-text">Blog posts</p>
+                    <span class="counters-item-count">873</span>
+                        <span class="counters-item-text">Blog posts</span>
                 </div>
                 <div class="counters-item launched-icon">
-                    <p class="counters-item-count">900</p>
-                    <p class="counters-item-text">We launched</p>
+                    <span class="counters-item-count">900</span>
+                        <span class="counters-item-text">We launched</span>
                 </div>
             </section>
 
             <!--RECENT POSTS-->
             <section class="recent-post">
-                <h2></h2>
-                <p></p>
+                <h2>Recent Posts</h2>
+                <p class="recent-post-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
                 <div class="recent-post-item">
-                    <!--картинка фоном-->
-                    <div class="recent-post-item-post">
+
+                    <article class="recent-post-item-post">
+                        <img src="img/post-1.jpg" alt="img" width="370" height="220">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                        <a href="#"><span>Read more</span></a>
                         <div class="date">
-                            <p></p>
-                            <p></p>
+                            <span class="date-number">30</span>
+                            <span class="date-month">Sep.</span>
                         </div>
-                        <h3></h3>
-                        <p></p>
-                        <a href="#">Read more</a>
-                    </div>
-                    <div class="recent-post-item-post">
+                    </article>
+                    <article class="recent-post-item-post">
+                        <img src="img/post-2.jpg" alt="img" width="370" height="220">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                        <a href="#"><span>Read more</span></a>
                         <div class="date">
-                            <p></p>
-                            <p></p>
+                            <span class="date-number">30</span>
+                            <span class="date-month">Sep.</span>
                         </div>
-                        <h3></h3>
-                        <p></p>
-                        <a href="#">Read more</a>
-                    </div>
-                    <div class="recent-post-item-post">
+                    </article>
+                    <article class="recent-post-item-post">
+                        <img src="img/post-3.jpg" alt="img" width="370" height="220">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                        <a href="#"><span>Read more</span></a>
                         <div class="date">
-                            <p></p>
-                            <p></p>
+                            <span class="date-number">30</span>
+                            <span class="date-month">sep.</span>
                         </div>
-                        <h3></h3>
-                        <p></p>
-                        <a href="#">Read more</a>
-                    </div>
+                    </article>
                 </div>
                 <div class="recent-post-arrows">
-                    <a href="#"></a>
-                    <a href="#"></a>
+                    <button class="small-left-arrow"></button>
+                    <button class="small-right-arrow"></button>
                 </div>
             </section>
 
             <!--PARTNERS-->
-            <article class="partners">
-                /*фон общий и фоном остальные картинки*/
-                <div class="partners-logo-1"></div>
-                <div class="partners-logo-2"></div>
-                <div class="partners-logo-3"></div>
-                <div class="partners-logo-4"></div>
-            </article>
+            <section class="partners">
+                <a href="#" target="_blank"><img src="img/logo-01.png" alt="logo" width="210" height="210"></a>
+                <a href="#" target="_blank"><img src="img/logo-02.png" alt="logo" width="210" height="210"></a>
+                <a href="#" target="_blank"><img src="img/logo-03.png" alt="logo" width="210" height="210"></a>
+                <a href="#" target="_blank"><img src="img/logo-04.png" alt="logo" width="210" height="210"></a>
+
+            </section>
         </main>
 
         <!--FOOTER-->
         <footer>
             <div class="footer-content">
-                <div class="footer-content-waxom">
-                    <div class="about-waxom-logo"></div>
-                    <h3></h3>
-                    <p></p>
-                    <a href="#">Read more</a>
-                </div>
+                <article class="footer-content-waxom">
+                    <a href="#" class="footer-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="56px" viewBox="0 0 64 56">
+
+                            <path d="M 52.87 55.13C 52.87 55.13 58.13 45.94 58.13 45.94 58.13 45.94 63.38 55.13 63.38 55.13 63.38 55.13 52.87 55.13 52.87 55.13ZM 46.3 45.17C 46.3 45.17 56.81 45.17 56.81 45.17 56.81 45.17 51.56 54.36 51.56 54.36 51.56 54.36 46.3 45.17 46.3 45.17ZM 51.56 34.45C 51.56 34.45 56.81 43.64 56.81 43.64 56.81 43.64 46.3 43.64 46.3 43.64 46.3 43.64 51.56 34.45 51.56 34.45ZM 39.74 33.69C 39.74 33.69 50.24 33.69 50.24 33.69 50.24 33.69 44.99 42.87 44.99 42.87 44.99 42.87 39.74 33.69 39.74 33.69ZM 44.99 22.97C 44.99 22.97 50.24 32.15 50.24 32.15 50.24 32.15 39.74 32.15 39.74 32.15 39.74 32.15 44.99 22.97 44.99 22.97ZM 33.17 22.2C 33.17 22.2 43.68 22.2 43.68 22.2 43.68 22.2 38.42 31.39 38.42 31.39 38.42 31.39 33.17 22.2 33.17 22.2ZM 38.42 11.48C 38.42 11.48 43.68 20.67 43.68 20.67 43.68 20.67 33.17 20.67 33.17 20.67 33.17 20.67 38.42 11.48 38.42 11.48ZM 26.6 10.71C 26.6 10.71 37.11 10.71 37.11 10.71 37.11 10.71 31.85 19.9 31.85 19.9 31.85 19.9 26.6 10.71 26.6 10.71ZM 31.85-0.01C 31.85-0.01 37.11 9.18 37.11 9.18 37.11 9.18 26.6 9.18 26.6 9.18 26.6 9.18 31.85-0.01 31.85-0.01ZM 20.03 20.67C 20.03 20.67 25.29 11.48 25.29 11.48 25.29 11.48 30.54 20.67 30.54 20.67 30.54 20.67 20.03 20.67 20.03 20.67ZM 13.46 32.15C 13.46 32.15 18.72 22.97 18.72 22.97 18.72 22.97 23.97 32.15 23.97 32.15 23.97 32.15 13.46 32.15 13.46 32.15ZM 6.9 43.64C 6.9 43.64 12.15 34.45 12.15 34.45 12.15 34.45 17.4 43.64 17.4 43.64 17.4 43.64 6.9 43.64 6.9 43.64ZM 0.33 55.13C 0.33 55.13 5.58 45.94 5.58 45.94 5.58 45.94 10.84 55.13 10.84 55.13 10.84 55.13 0.33 55.13 0.33 55.13ZM 17.4 45.17C 17.4 45.17 12.15 54.36 12.15 54.36 12.15 54.36 6.9 45.17 6.9 45.17 6.9 45.17 17.4 45.17 17.4 45.17ZM 23.97 33.69C 23.97 33.69 18.72 42.87 18.72 42.87 18.72 42.87 13.46 33.69 13.46 33.69 13.46 33.69 23.97 33.69 23.97 33.69ZM 30.54 22.2C 30.54 22.2 25.29 31.39 25.29 31.39 25.29 31.39 20.03 22.2 20.03 22.2 20.03 22.2 30.54 22.2 30.54 22.2ZM 37.11 55.13C 37.11 55.13 26.6 55.13 26.6 55.13 26.6 55.13 31.85 45.94 31.85 45.94 31.85 45.94 37.11 55.13 37.11 55.13ZM 43.68 45.17C 43.68 45.17 38.42 54.36 38.42 54.36 38.42 54.36 33.17 45.17 33.17 45.17 33.17 45.17 43.68 45.17 43.68 45.17ZM 50.24 55.13C 50.24 55.13 39.74 55.13 39.74 55.13 39.74 55.13 44.99 45.94 44.99 45.94 44.99 45.94 50.24 55.13 50.24 55.13Z" />
+                        </svg><span>Waxom</span>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+                    <a class="read" href="#"><span>Read more</span></a>
+                </article>
                 <div class="footer-content-recent-post">
-                    <h3></h3>
-                    <p></p>
-                    <hr>
-                    <p></p>
-                    <hr>
+
+                    <h3>Recent Posts</h3>
+                    <div class="post">
+                        <span class="date"> September 08, 2015</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    </div>
+                    <div class="post">
+                        <span class="date"> September 08, 2015</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    </div>
+                    <div class="post">
+                        <span class="date"> September 08, 2015</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    </div>
+
                 </div>
                 <div class="footer-content-twitter">
-                    <h3></h3>
-                    <p></p>
-                    <hr>
-                    <p></p>
-                    <hr>
+                    <h3>Our Twitter</h3>
+                    <div class="post">
+                        <p><span>&#64;waxom</span> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
+                        <span class="time">3 min ago</span> 
+                    </div>
+                    <div class="post">
+                        <p>Mirum est <span>#envato</span> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+                        <span class="time"> 5 hours ago</span>
+                    </div>
+                    <div class="post">
+                        <p>Soluta nobis option bit.ly/1Hniso7</p>
+                        <span class="time"> 20 days ago</span>
+                    </div>
                 </div>
                 <div class="footer-content-widget">
-                    <h3></h3>
+                    <h3>Dribbble Widget</h3>
+
                     <div class="widgets">
-                        <div class="widget-1"></div>
-                        <div class="widget-2"></div>
-                        <div class="widget-3"></div>
-                        <div class="widget-4"></div>
+                        <img src="img/widget-1.jpg" alt="widget" width="130" height="98">
+                        <img src="img/widget-2.jpg" alt="widget" width="130" height="98">
+                        <img src="img/widget-3.jpg" alt="widget" width="130" height="98">
+                        <img src="img/widget-4.jpg" alt="widget" width="130" height="98">
                     </div>
                 </div>
             </div>
             <div class="footer-copyright">
                 <div class="footer-copyright-left">
-                    <p></p>
-                    <a href="#">Private Policy</a>
-                    <a href="#">faq</a>
-                    <a href="#"></a>Support
+                    <p>Copyright &copy; 2015 <span>Waxom</span> </p>
+                    <a href="#"><span>Private Policy</span></a>
+                    <a class="uppercase" href="#"><span>faq</span></a>
+                    <a href="#"><span>Support</span></a>
                 </div>
                 <div class="footer-copyright-right">
-                    <p></p>
-                    <p></p>
+                    <p>Designed by <span>ThemeFire</span></p>
+                    <p>Only on <span>Envato Market</span></p>
                 </div>
             </div>
         </footer>
