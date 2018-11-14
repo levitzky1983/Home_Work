@@ -1582,14 +1582,12 @@ header .slides a:hover {
     top: 50px;
     right: 15%;
     cursor: pointer;
-    /* &:hover{
-         .menu-icon{
-             background-color: #c7b299;
-             &::after,&::before{
-                 background-color: #c7b299;
-             }
-         }
-     }*/
+  }
+  header nav .menu-btn:hover .menu-icon {
+    background-color: #c7b299;
+  }
+  header nav .menu-btn:hover .menu-icon::after, header nav .menu-btn:hover .menu-icon::before {
+    background-color: #c7b299;
   }
   header nav .menu-btn .menu-icon {
     display: block;
