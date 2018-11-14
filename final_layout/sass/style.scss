@@ -19,10 +19,15 @@
     .container {
         width: 100%;
         margin: 0 auto;
+        height: 100%;
     }
 
     header {
         width: 100%;
+        padding: 5% 2%;
+        height: 200px;
+        background-size: cover;
+        background-position:center;
 
         .header-icons-cart-search {
             display: none;
@@ -34,6 +39,10 @@
             display: none;
         }
 
+        .header-logo {
+            width: 50%;
+        }
+
         nav {
             width: 30%;
             display: flex;
@@ -41,6 +50,7 @@
             justify-content: center;
             align-items: center;
             margin-left: none;
+            margin-top: 5%;
 
 
             .menu-btn {
@@ -82,9 +92,8 @@
             .menu-container {
                 visibility: hidden;
 
-
-
             }
+            
         }
 
     }

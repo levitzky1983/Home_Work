@@ -76,7 +76,7 @@ header {
       justify-content: space-around;
   width: 100%;
   padding: 3% 7.8%;
-  min-height: 1024px;
+  height: 1024px;
   background: #f4f5f8 url(../img/photo.jpg) no-repeat;
   /*.sliders div#first:target ~ .slides a[href="#first"] {
        background-color: chartreuse;
@@ -1505,10 +1505,15 @@ header .slides a:hover {
   .container {
     width: 100%;
     margin: 0 auto;
+    height: 100%;
   }
 
   header {
     width: 100%;
+    padding: 5% 2%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
   }
   header .header-icons-cart-search {
     display: none;
@@ -1517,6 +1522,9 @@ header .slides a:hover {
   header .main-btn,
   header .slides {
     display: none;
+  }
+  header .header-logo {
+    width: 50%;
   }
   header nav {
     width: 30%;
@@ -1534,6 +1542,7 @@ header .slides a:hover {
         -ms-flex-align: center;
             align-items: center;
     margin-left: none;
+    margin-top: 5%;
   }
   header nav .menu-btn {
     display: -webkit-box;
