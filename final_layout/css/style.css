@@ -110,16 +110,20 @@ header a.header-logo:hover span {
   color: #c7b29a;
 }
 header nav {
-  min-width: 38%;
-  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-left: 10%;
+  margin-top: 20px;
 }
 header nav .menu_check-box,
 header nav menu-btn {
   display: none;
 }
 header nav ul {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,6 +136,16 @@ header nav ul {
 }
 header nav ul li {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
 }
 header nav ul li a {
   text-decoration: none;
@@ -1510,24 +1524,35 @@ header .slides a:hover {
 
   header {
     width: 100%;
-    padding: 5% 2%;
-    height: 200px;
+    padding: 0;
+    height: 320px;
     background-size: cover;
     background-position: center;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-  header .header-icons-cart-search {
-    display: none;
-  }
+  header .header-icons-cart-search,
   header .sliders,
   header .main-btn,
   header .slides {
     display: none;
   }
   header .header-logo {
-    width: 50%;
+    position: absolute;
+    top: 40px;
+    left: 15%;
   }
   header nav {
-    width: 30%;
+    position: absolute;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1535,19 +1560,16 @@ header .slides a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: none;
-    margin-top: 5%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin: 0;
   }
   header nav .menu-btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1556,6 +1578,18 @@ header .slides a:hover {
             align-items: center;
     width: 40px;
     height: 40px;
+    z-index: 10;
+    top: 50px;
+    right: 15%;
+    cursor: pointer;
+    /* &:hover{
+         .menu-icon{
+             background-color: #c7b299;
+             &::after,&::before{
+                 background-color: #c7b299;
+             }
+         }
+     }*/
   }
   header nav .menu-btn .menu-icon {
     display: block;
@@ -1578,7 +1612,49 @@ header .slides a:hover {
   header nav .menu-btn .menu-icon::after {
     top: -8px;
   }
-  header nav .menu-container {
-    visibility: hidden;
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: -320px;
+    -webkit-transition: top 1s;
+    transition: top 1s;
+    z-index: 1;
+    background-color: cadetblue;
+  }
+  header nav ul li {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    margin: 0;
+  }
+  header nav ul li a {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  header .menu_check-box:checked ~ .menu-btn .menu-icon {
+    background: transparent;
+  }
+  header .menu_check-box:checked ~ .menu-btn .menu-icon::before {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  header .menu_check-box:checked ~ .menu-btn .menu-icon::after {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  header .menu_check-box:checked ~ ul {
+    top: 0;
   }
 }
