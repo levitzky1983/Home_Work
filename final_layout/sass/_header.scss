@@ -42,21 +42,35 @@ header {
         min-width: 38%;
         height: 56px;
         margin-left: 10%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
-        a {
-            text-decoration: none;
-            font-family: Montserrat;
-            color: $colorTextWhite;
-            font-size: 14px;
-            font-weight: 300;
-            text-align: left;
-            outline: none;
 
-            &:hover {
-                color: #c7b29a;
+        .menu_check-box,
+        menu-btn {
+            display: none;
+        }
+
+        ul {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    font-family: Montserrat;
+                    color: $colorTextWhite;
+                    font-size: 14px;
+                    font-weight: 300;
+                    text-align: left;
+                    outline: none;
+
+                    &:hover {
+                        color: #c7b29a;
+                    }
+                }
             }
         }
     }
@@ -161,17 +175,13 @@ header {
 
 
         }
-        #first{
-            opacity: 1;
-        }       
 
-        .header-slogan:target {
+        #first {
             opacity: 1;
         }
-         
-      
+
     }
-    
+
     button.main-btn {
 
         border-radius: 3px;
@@ -232,8 +242,9 @@ header {
             }
         }
     }
-     /*.sliders div#first:target ~ .slides a[href="#first"] {
+
+    /*.sliders div#first:target ~ .slides a[href="#first"] {
          background-color: chartreuse;
     }*/
-   
+
 }
