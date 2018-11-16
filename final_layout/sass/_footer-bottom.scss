@@ -7,9 +7,10 @@
     justify-content: space-around;
 
     &-left {
-        min-width: 410px;
+       
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
 
         p {
             font-family: Montserrat;
@@ -60,9 +61,10 @@
     }
 
     &-right {
-        min-width: 320px;
+       
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
 
         p {
             font-family: Montserrat;
@@ -71,6 +73,7 @@
             font-weight: 300;
             line-height: 20px;
             text-align: right;
+            margin-left: 1rem;
 
             span {
                 font-family: Montserrat;

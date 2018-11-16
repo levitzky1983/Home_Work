@@ -9,8 +9,8 @@ header {
 
     a.header-logo {
         display: flex;
-        height: 56px;
-        align-items: center;
+      
+        align-items: flex-start;
         text-decoration: none;
         outline: none;
 
@@ -24,6 +24,8 @@ header {
             font-size: 34px;
             font-weight: 400;
             text-align: right;
+            margin-top: 10px;
+           
         }
 
         &:hover {
