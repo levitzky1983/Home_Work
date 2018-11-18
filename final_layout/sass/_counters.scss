@@ -15,11 +15,11 @@
         flex-direction: column;
         justify-content: center;
         width: 10%;
-        min-width: 120px;
         min-height: 200px;
         position: relative;
 
         &-count {
+
             font-family: Montserrat;
             color: #ffffff;
             font-size: 48px;
@@ -31,6 +31,7 @@
         }
 
         &-text {
+
             font-family: Montserrat;
             color: #c7b299;
             font-size: 14px;
@@ -47,7 +48,7 @@
             height: 2px;
             background-color: #ffffff;
             position: absolute;
-            top:190px;
+            top: 190px;
             left: 80px;
         }
 
