@@ -4,13 +4,13 @@ header {
     justify-content: space-around;
     width: 100%;
     padding: 3% 7.8%;
-    min-height: 1024px;
+    height:1024px;
     background: $bgcolor url(../img/photo.jpg) no-repeat;
 
     a.header-logo {
         display: flex;
-        height: 56px;
-        align-items: center;
+      
+        align-items: flex-start;
         text-decoration: none;
         outline: none;
 
@@ -24,6 +24,8 @@ header {
             font-size: 34px;
             font-weight: 400;
             text-align: right;
+            margin-top: 10px;
+           
         }
 
         &:hover {
@@ -39,24 +41,43 @@ header {
     }
 
     nav {
-        min-width: 38%;
-        height: 56px;
-        margin-left: 10%;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        margin-left: 10%;
+        margin-top: 20px;
 
-        a {
-            text-decoration: none;
-            font-family: Montserrat;
-            color: $colorTextWhite;
-            font-size: 14px;
-            font-weight: 300;
-            text-align: left;
-            outline: none;
 
-            &:hover {
-                color: #c7b29a;
+        .menu_check-box,
+        menu-btn {
+            display: none;
+        }
+
+        ul {
+           
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 30px;
+
+                a {
+                    text-decoration: none;
+                    font-family: Montserrat;
+                    color: $colorTextWhite;
+                    font-size: 14px;
+                    font-weight: 300;
+                    text-align: left;
+                    outline: none;
+
+                    &:hover {
+                        color: #c7b29a;
+                    }
+                }
             }
         }
     }
@@ -161,17 +182,13 @@ header {
 
 
         }
-        #first{
-            opacity: 1;
-        }       
 
-        .header-slogan:target {
+        #first {
             opacity: 1;
         }
-         
-      
+
     }
-    
+
     button.main-btn {
 
         border-radius: 3px;
@@ -232,8 +249,9 @@ header {
             }
         }
     }
-     /*.sliders div#first:target ~ .slides a[href="#first"] {
+
+    /*.sliders div#first:target ~ .slides a[href="#first"] {
          background-color: chartreuse;
     }*/
-   
+
 }
